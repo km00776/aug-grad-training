@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Quicksand:wght@500&display=swap');
+
 h2 {
     color: #1976d2;
+    font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
 }

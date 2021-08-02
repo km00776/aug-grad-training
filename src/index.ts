@@ -1,4 +1,5 @@
 import * as _ from "lodash";
+import '../styles.css';
 
 window.addEventListener("load", () => {
     const header = document.createElement("h1");

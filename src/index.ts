@@ -11,43 +11,86 @@ window.addEventListener("load", () => {
     element.innerText = _.find(fe, {id: 1})?.name;
     body.appendChild(element);
 
+    const form = document.createElement("form");
+    form.setAttribute("method", "post");
+    
+    const titleLabel = document.createElement("label");
+    titleLabel.innerHTML = "Title";
+    body.appendChild(titleLabel);
+    //
+    const titleArray = ["Please select", "Mr", "Mrs", "Ms", "Miss", "Dr", "Sir" , "Reverend", "Dame", "Lady", "Lord", "Professor"]
+    const selectList = document.createElement("select");
+    form.appendChild(selectList);
+
+    for (let i = 0; i < titleArray.length; i++) {
+        var option = document.createElement("option");
+        option.value = titleArray[i];
+        option.text = titleArray[i];
+        selectList.appendChild(option);
+    }
+
+    //
     const firstNameLabel = document.createElement("label");
     firstNameLabel.innerHTML = "First Name";
-    body.appendChild(firstNameLabel);
+    form.appendChild(firstNameLabel);
 
     const firstNameInput = document.createElement("input");
-    body.appendChild(firstNameInput);
+    form.append(firstNameInput);
 
     const lastNameLabel = document.createElement("label");
     lastNameLabel.innerHTML = "Surname";
-    body.appendChild(lastNameLabel);
+    form.appendChild(lastNameLabel);
   
     const lastNameInput = document.createElement("input");
-    body.appendChild(lastNameInput);
+    form.append(lastNameInput);
 
     const dateOfBirthLabel = document.createElement("label");
     dateOfBirthLabel.innerHTML = "Date of Birth";
-    body.appendChild(dateOfBirthLabel);
+    form.appendChild(dateOfBirthLabel);
 
     const dateOfBirthInput = document.createElement("input");
     dateOfBirthInput.setAttribute('type', 'date');
-    body.appendChild(dateOfBirthInput);
+    form.appendChild(dateOfBirthInput);
 
     const phoneNumberLabel = document.createElement("label");
     phoneNumberLabel.innerHTML = "Telephone number";
-    body.appendChild(phoneNumberLabel);
+    form.appendChild(phoneNumberLabel);
 
     const phoneNumberInput = document.createElement("input");
-    body.appendChild(phoneNumberInput);
+    form.appendChild(phoneNumberInput);
 
     const emailLabel = document.createElement("label");
     emailLabel.innerHTML = "Email Address";
-    body.appendChild(emailLabel);
+    form.appendChild(emailLabel);
 
     const emailInput = document.createElement("input");
-    body.appendChild(emailInput);
+    form.appendChild(emailInput);
 
-    const submitBtn = document.createElement("button");
-    submitBtn.innerHTML = "Continue";
-    body.appendChild(submitBtn);
+    const submitBtn = document.createElement("input");
+    submitBtn.className = "btn";
+    submitBtn.id = "submitBtn"
+
+    submitBtn.setAttribute("type", "submit");
+    submitBtn.setAttribute("value", "Submit");
+    submitBtn.innerHTML = "Continue" ;
+    form.appendChild(submitBtn);
+
+    // const svgImg = document.createElement("img");
+    // svgImg.src = "https://svgshare.com/i/Zn1.svg";
+    // body.appendChild(svgImg);
+
+
+ 
+
+
+    form.onsubmit = function () {
+        
+        alert('clicked'); return false;
+        }
+
+    document.getElementsByTagName("body")[0].appendChild(form);
+
+   
 });
+
+

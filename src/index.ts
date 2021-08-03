@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
     //
     const titleArray = ["Please select", "Mr", "Mrs", "Ms", "Miss", "Dr", "Sir" , "Reverend", "Dame", "Lady", "Lord", "Professor"]
     const selectList = document.createElement("select");
-    form.appendChild(selectList);
+   
 
     for (let i = 0; i < titleArray.length; i++) {
         var option = document.createElement("option");
@@ -28,7 +28,7 @@ window.addEventListener("load", () => {
         option.text = titleArray[i];
         selectList.appendChild(option);
     }
-
+    form.appendChild(selectList);
     //
     const firstNameLabel = document.createElement("label");
     firstNameLabel.innerHTML = "First Name";
@@ -57,6 +57,7 @@ window.addEventListener("load", () => {
     form.appendChild(phoneNumberLabel);
 
     const phoneNumberInput = document.createElement("input");
+    phoneNumberInput.setAttribute('type', 'number');
     form.appendChild(phoneNumberInput);
 
     const emailLabel = document.createElement("label");
@@ -64,6 +65,7 @@ window.addEventListener("load", () => {
     form.appendChild(emailLabel);
 
     const emailInput = document.createElement("input");
+    emailInput.setAttribute('type', 'email');
     form.appendChild(emailInput);
 
     const submitBtn = document.createElement("input");
@@ -75,18 +77,28 @@ window.addEventListener("load", () => {
     submitBtn.innerHTML = "Continue" ;
     form.appendChild(submitBtn);
 
-    // const svgImg = document.createElement("img");
-    // svgImg.src = "https://svgshare.com/i/Zn1.svg";
-    // body.appendChild(svgImg);
+    const svgImg = document.createElement("img");
+    svgImg.src = "https://svgshare.com/i/Zn1.svg";
+    body.appendChild(svgImg);
 
 
  
 
 
     form.onsubmit = function () {
-        
-        alert('clicked'); return false;
+        let firstName = firstNameInput.value;
+        let lastName = lastNameInput.value;
+        let dateOfBirth = dateOfBirthInput.value;
+        let phoneNumber = phoneNumberInput.value;
+        let title = selectList.value;
+        let emailAddress = emailInput.value;
+
+        if (firstName === "" || lastName === "" || dateOfBirth === "" || phoneNumber === "" || title === "" || emailAddress === "" ) {
+                alert("Empty fields - Please have all fields filled in")
         }
+      
+        return false;
+    }
 
     document.getElementsByTagName("body")[0].appendChild(form);
 

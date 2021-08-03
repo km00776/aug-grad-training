@@ -2,8 +2,8 @@
 
 * Development a HTML page which contains the following personal detail form using HTML5, CSS3 and ES6.
 
-1. All fields are mandatory.
-2. Title field has the following values
+1. All fields are mandatory. Done 
+2. Title field has the following values Done
     - Please select
     - Mr
     - Mrs
@@ -18,8 +18,8 @@
     - Professor
 3. First name and surname accepts only string.
 4. Date of birth field checks age and the minimum acceptable age is 18 years.
-5. Telephone field accepts only UK phone number.
-6. Email field accepts only valid email address.
+5. Telephone field accepts only UK phone number. Done
+6. Email field accepts only valid email address. Done
 7. Continue button validates the form and throws errors in case of invalid inputs.
 8. Show the form validation error adjacent to the respective form element with red colour text.
 9. Show a success message on clicking continue button if a valid data entry is made.

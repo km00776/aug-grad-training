@@ -5,6 +5,7 @@ h2 {
     font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
     font-weight: 1200;
+  
 
 }
 
@@ -19,6 +20,7 @@ h1 {
     font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+    
 
 }
 
@@ -34,6 +36,8 @@ input {
     display: block;
     margin-top: 20px;
     width: 300px;
+       font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .btn {

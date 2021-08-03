@@ -35,6 +35,8 @@ window.addEventListener("load", () => {
     form.appendChild(firstNameLabel);
 
     const firstNameInput = document.createElement("input");
+    firstNameInput.setAttribute('type', 'text');
+    firstNameInput.setAttribute("pattern", "[A-Za-z]");
     form.append(firstNameInput);
 
     const lastNameLabel = document.createElement("label");
@@ -42,6 +44,9 @@ window.addEventListener("load", () => {
     form.appendChild(lastNameLabel);
   
     const lastNameInput = document.createElement("input");
+    lastNameInput.setAttribute('type', 'text');
+    lastNameInput.setAttribute("pattern", "[A - Za - z]");
+    lastNameInput.setAttribute("oninvalid", "Please enter a valid last name")
     form.append(lastNameInput);
 
     const dateOfBirthLabel = document.createElement("label");
@@ -57,7 +62,9 @@ window.addEventListener("load", () => {
     form.appendChild(phoneNumberLabel);
 
     const phoneNumberInput = document.createElement("input");
-    phoneNumberInput.setAttribute('type', 'number');
+    phoneNumberInput.setAttribute('type', 'tel');
+    phoneNumberInput.setAttribute("pattern", "/^\d{11}$/");
+    phoneNumberInput.setAttribute("oninvalid", "setCustomValidity('Please enter a valid UK Phone Number')")
     form.appendChild(phoneNumberInput);
 
     const emailLabel = document.createElement("label");
@@ -93,10 +100,21 @@ window.addEventListener("load", () => {
         let title = selectList.value;
         let emailAddress = emailInput.value;
 
-        if (firstName === "" || lastName === "" || dateOfBirth === "" || phoneNumber === "" || title === "" || emailAddress === "" ) {
+        if (firstName === "" || lastName === "" || dateOfBirth === "" || phoneNumber === "" || title === "" || emailAddress === "") {
                 alert("Empty fields - Please have all fields filled in")
         }
-      
+
+        if(title == titleArray[0]) {
+            alert("Select a valid Title");
+        }
+         
+        if ((/^\d{11}$/).test(phoneNumber) === false) {
+                alert("Please enter a valid UK number")
+        }
+        else {
+            alert(phoneNumber);
+        }
+       
         return false;
     }
 

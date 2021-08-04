@@ -1,14 +1,45 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <link type="text/css" rel="stylesheet" href="./styles.css">
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width  =device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Front End HTML and CSS Assignment </h1>
+    </header>
+    <h2>About You</h2>
+    <form id="userDataForm">
+        <label for="userTitle">Title:</label>
+        <select name="userTitle" id="userTitle" form="userDataForm">
+            <option value="PleaseSelect" selected>Please Select</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Dr">Dr</option>
+            <option value="Sir">Sir</option>
+            <option value="Reverend">Reverend</option>
+            <option value="Dame">Dame</option>
+            <option value="Lady">Lady</option>
+            <option value="Lord">Lord</option>
+            <option value="Professor">Professor</option>
+        </select>
+            <label for="firstName">First Name:</label>
+            <input></input>
+            <label for="lastName">Last Name:</label>
+            <input></input>
+            <label for="dateOfbirth">Date Of Birth</label>
+            <input type="date"></input>
+            <label for="telephoneNumber">UK Telephone Number</label>
+            <input></input>
+            <label for="emailAddress">Email Address</label>
+            <input type="email"></input>
+            
+            <input id="submitBtn" class="btn" type="submit">
+    </form>
+      <img src="https://svgshare.com/i/Zn1.svg"> </img>
 </body>
 </html>

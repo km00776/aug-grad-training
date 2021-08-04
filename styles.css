@@ -9,34 +9,27 @@ h2 {
 
 }
 
-body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  height:100vh;
- 
-}
-
 h1 {
     font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
-    
-
 }
 
 label {
     font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
     display: block;
-    margin-top: 20px;
-  
+    margin-top: 13px;
 }
 
+body {
+    overflow: hidden;
+}
 input {
     display: block;
-    margin-top: 20px;
-    width: 300px;
-       font-family: 'Itim', cursive;
+    margin-top: 13px;
+    width: 400px;
+    font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -50,7 +43,7 @@ input {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 13px;
   padding: 12px 28px;
   font-family: 'Itim', cursive;
   font-family: 'Quicksand', sans-serif;   
@@ -67,12 +60,41 @@ select {
 img {
     float: right;
     position:relative;
-    
-    bottom: 20px;
+    height: 500px;
+    bottom: 500px;
 }
 
-@media (max-width:629px) {
+@media only screen and (max-width: 600px) {
     img  {
     display: none;
   }
+  input {
+    display: block;
+    margin-top: 15px;
+    width: 300px;
+    font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
+ }
+ 
+.btn {
+    background-color: #5D3FD3	; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 12px 28px;
+  font-family: 'Itim', cursive;
+  font-family: 'Quicksand', sans-serif;   
+}
+h2 {
+    text-align: center;
+}
+ form {
+    margin-left: 40px;
+ }
 }

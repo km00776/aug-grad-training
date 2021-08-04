@@ -1,6 +1,5 @@
 import * as _ from "lodash";
-import '../styles.css';
-
+import '../viewports/styles.css';
 window.addEventListener("load", () => {
         // const header = document.createElement("h1");
         // header.innerText = "Front End HTML and CSS Assignment"

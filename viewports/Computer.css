@@ -1,0 +1,74 @@
+@media (min-width:1281px) {
+
+h2 {
+    color: black;
+    font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 1200;
+    margin-left: 20px;
+  
+
+}
+
+h1 {
+    font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+label {
+    font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+body {
+    overflow: hidden;
+     margin:0px;
+  height:100vh;
+}
+input {
+    display: block;
+    margin-top: 13px;
+    width: 400px;
+    font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #5D3FD3	; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 13px;
+  padding: 12px 28px;
+  font-family: 'Itim', cursive;
+  font-family: 'Quicksand', sans-serif;   
+  margin-left: 20px;
+  
+}
+
+select {
+    margin-top: 20px;
+      font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
+     width: 300px;
+     margin-left: 20px;
+}
+
+img {
+    float: right;
+    position:relative;
+    height: 500px;
+    bottom: 500px;
+}
+
+}

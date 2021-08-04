@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Quicksand:wght@500&display=swap');
 
-h2 {
+@media (max-width: 600px) {
+  form {
+   
+ }
+ h2 {
     color: black;
     font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
     font-weight: 1200;
+    margin-left: 20px;
   
 
 }
@@ -19,18 +23,22 @@ label {
     font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
     display: block;
-    margin-top: 13px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 body {
     overflow: hidden;
+     margin:0px;
+  height:100vh;
 }
 input {
     display: block;
-    margin-top: 13px;
-    width: 400px;
+    margin-top: 10px;
+    width: 300px;
     font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
 }
 
 .btn {
@@ -47,54 +55,19 @@ input {
   padding: 12px 28px;
   font-family: 'Itim', cursive;
   font-family: 'Quicksand', sans-serif;   
-  
+  margin-left: 20px;
 }
 
 select {
-    margin-top: 20px;
+    margin-top: 10px;
       font-family: 'Itim', cursive;
     font-family: 'Quicksand', sans-serif;
      width: 300px;
+     margin-left: 20px;
 }
+
 
 img {
-    float: right;
-    position:relative;
-    height: 500px;
-    bottom: 500px;
-}
-
-@media only screen and (max-width: 600px) {
-    img  {
     display: none;
-  }
-  input {
-    display: block;
-    margin-top: 15px;
-    width: 300px;
-    font-family: 'Itim', cursive;
-    font-family: 'Quicksand', sans-serif;
- }
- 
-.btn {
-    background-color: #5D3FD3	; /* Green */
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  margin-top: 15px;
-  padding: 12px 28px;
-  font-family: 'Itim', cursive;
-  font-family: 'Quicksand', sans-serif;   
 }
-h2 {
-    text-align: center;
-}
- form {
-    margin-left: 40px;
- }
 }
